@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Admissions — SevenForks Comprehensive School" />
+    <title>Admissions — SevenForks Comprehensive School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-elevate>
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="SevenForks Comprehensive School home">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="mark-ring"></span>
+            <span class="mark-s" aria-hidden="true">S</span>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">SevenForks</span>
+            <span class="brand-sub">Comprehensive School</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+            <span class="sr-only">Open menu</span>
+          </button>
+
+          <div class="nav-menu" id="navMenu">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="academics.html">Academics</a>
+            <a class="nav-link is-active" href="admissions.html">Admissions</a>
+            <a class="nav-link" href="news.html">News</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="btn btn-primary portal-btn" href="portal.html">Portal Login</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container page-hero-inner" data-reveal="up">
+          <h1>Admissions</h1>
+          <p>Requirements, steps, and a simple application form.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="grid-2" data-reveal-stagger>
+            <article class="card">
+              <h2 class="h3">Admission Requirements</h2>
+              <ul class="checks">
+                <li>Completed application form</li>
+                <li>Previous school report (if applicable)</li>
+                <li>Birth certificate copy</li>
+                <li>Passport photo</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h2 class="h3">Application Process</h2>
+              <ol class="list">
+                <li>Submit enquiry</li>
+                <li>Campus visit / interview (if needed)</li>
+                <li>Submit documents</li>
+                <li>Placement & onboarding</li>
+              </ol>
+            </article>
+          </div>
+
+          <div class="section-head" style="margin-top:18px" data-reveal="up">
+            <h2>Application Form</h2>
+            <p>Please fill in your details. Validation is handled in JavaScript.</p>
+          </div>
+
+          <div class="contact" data-reveal="up">
+            <form class="form" id="admissionsForm" data-validate>
+              <div class="field">
+                <label for="a_name">Full Name</label>
+                <input id="a_name" name="name" type="text" autocomplete="name" required />
+                <small class="error" data-error-for="a_name"></small>
+              </div>
+              <div class="field">
+                <label for="a_email">Email</label>
+                <input id="a_email" name="email" type="email" autocomplete="email" required />
+                <small class="error" data-error-for="a_email"></small>
+              </div>
+              <div class="field">
+                <label for="a_phone">Phone</label>
+                <input id="a_phone" name="phone" type="tel" autocomplete="tel" placeholder="e.g., 0551234567" required />
+                <small class="error" data-error-for="a_phone"></small>
+              </div>
+              <div class="field">
+                <label for="a_class">Class</label>
+                <select id="a_class" name="class" required>
+                  <option value="" selected disabled>Select class</option>
+                  <option>Grade 1</option>
+                  <option>Grade 2</option>
+                  <option>Grade 3</option>
+                  <option>Grade 4</option>
+                  <option>Grade 5</option>
+                  <option>Grade 6</option>
+                  <option>Grade 7</option>
+                  <option>Grade 8</option>
+                  <option>Grade 9</option>
+                </select>
+                <small class="error" data-error-for="a_class"></small>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Submit Application</button>
+              <p class="form-note" id="admissionsNote" role="status" aria-live="polite"></p>
+            </form>
+
+            <aside class="contact-aside">
+              <div class="aside-card accent">
+                <h3>Tip</h3>
+                <p class="muted">For faster support, include a working phone number and preferred class.</p>
+              </div>
+              <div class="aside-card">
+                <h3>Admissions Office</h3>
+                <p class="muted">Mon–Fri, 8:00 AM – 3:00 PM</p>
+                <div class="kv"><span>Phone</span><a href="tel:+0000000000">+000 000 0000</a></div>
+                <div class="kv"><span>Email</span><a href="mailto:admissions@sevenforks.school">admissions@sevenforks.school</a></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">SevenForks Comprehensive School</div>
+          <div class="footer-motto">Better Your Best To Excellence</div>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="news.html">News</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social" aria-label="Social links">
+          <a class="social" href="#" aria-label="Facebook">f</a>
+          <a class="social" href="#" aria-label="X">x</a>
+          <a class="social" href="#" aria-label="Instagram">ig</a>
+        </div>
+        <div class="footer-copy">© <span id="year"></span> SevenForks. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <div class="popup" data-popup hidden>
+      <div class="popup-card" role="dialog" aria-modal="true" aria-label="Announcement">
+        <button class="popup-close" type="button" data-popup-close aria-label="Close announcement">×</button>
+        <h3>Announcement</h3>
+        <p>Admissions for the new term are open. Submit your form to get started.</p>
+        <a class="btn btn-primary" href="contact.html">Ask a Question</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

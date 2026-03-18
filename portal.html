@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portal Login — SevenForks Comprehensive School" />
+    <title>Portal Login — SevenForks Comprehensive School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .portal-container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: radial-gradient(circle at top right, rgba(124,58,237,0.1), transparent),
+                    radial-gradient(circle at bottom left, rgba(255,99,71,0.05), transparent);
+      }
+      .portal-card {
+        background: white;
+        padding: 48px;
+        border-radius: 24px;
+        box-shadow: var(--shadow);
+        text-align: center;
+        max-width: 500px;
+        width: 100%;
+        border: 1px solid var(--line);
+      }
+      .portal-logo {
+        margin-bottom: 24px;
+      }
+      .portal-title {
+        font-size: 32px;
+        margin-bottom: 16px;
+        background: linear-gradient(135deg, var(--brand), var(--accent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 800;
+      }
+      .portal-msg {
+        font-size: 18px;
+        color: var(--muted);
+        line-height: 1.6;
+        margin-bottom: 32px;
+      }
+      .genay-branding {
+        margin-top: 40px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+        font-size: 14px;
+        color: var(--muted-2);
+      }
+      .genay-tech {
+        color: var(--brand);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="portal-container">
+      <div class="portal-card" data-reveal="up">
+        <div class="portal-logo">
+          <a class="brand" href="index.html" style="justify-content: center;">
+            <span class="brand-mark" aria-hidden="true">
+              <span class="mark-ring"></span>
+              <span class="mark-s" aria-hidden="true">S</span>
+            </span>
+          </a>
+        </div>
+        <h1 class="portal-title">Welcome Back!</h1>
+        <p class="portal-msg">
+          You are now securely logging into your personalized student & staff dashboard. 
+          Get ready to "Better Your Best" with our advanced learning tools.
+        </p>
+        <a href="https://edu-track-15m3.onrender.com/login" class="btn btn-primary" style="width: 100%; padding: 16px;">Go to Dashboard</a>
+        <div class="genay-branding">
+          Powered by <a href="https://edu-track-15m3.onrender.com/login" class="genay-tech" target="_blank">GENAY TECHNOLOGIES</a>
+        </div>
+        <div style="margin-top: 20px;">
+          <a href="index.html" class="text-link" style="color: var(--brand);">← Back to School Website</a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

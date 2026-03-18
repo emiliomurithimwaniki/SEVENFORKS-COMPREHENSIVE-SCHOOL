@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Academics at SevenForks Comprehensive School — Better Your Best To Excellence" />
+    <title>Academics — SevenForks Comprehensive School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-elevate>
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="SevenForks Comprehensive School home">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="mark-ring"></span>
+            <span class="mark-s" aria-hidden="true">S</span>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">SevenForks</span>
+            <span class="brand-sub">Comprehensive School</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+            <span class="sr-only">Open menu</span>
+          </button>
+
+          <div class="nav-menu" id="navMenu">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link is-active" href="academics.html">Academics</a>
+            <a class="nav-link" href="admissions.html">Admissions</a>
+            <a class="nav-link" href="news.html">News</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="btn btn-primary portal-btn" href="portal.html">Portal Login</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container page-hero-inner" data-reveal="up">
+          <h1>Academics</h1>
+          <p>Subjects, departments, and a simple weekly timetable overview.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head" data-reveal="up">
+            <h2>Subjects Offered</h2>
+            <p>Our core and elective subjects support both academic strength and practical skills.</p>
+          </div>
+
+          <div class="grid-3" data-reveal-stagger>
+            <article class="card"><h3>Mathematics</h3><p>Numeracy, problem solving, and logical reasoning.</p></article>
+            <article class="card"><h3>English Language</h3><p>Reading, writing, and communication skills.</p></article>
+            <article class="card"><h3>Integrated Science</h3><p>Hands‑on learning and scientific thinking.</p></article>
+            <article class="card"><h3>Social Studies</h3><p>Citizenship, history, and cultural understanding.</p></article>
+            <article class="card"><h3>ICT / Computing</h3><p>Digital literacy, coding basics, and safety online.</p></article>
+            <article class="card"><h3>Creative Arts</h3><p>Art, music, and creative expression.</p></article>
+          </div>
+
+          <div class="section-head" style="margin-top:18px" data-reveal="up">
+            <h2>Departments</h2>
+            <p>Structured learning support through subject departments.</p>
+          </div>
+
+          <div class="grid-2" data-reveal-stagger>
+            <article class="card"><h3>Science Department</h3><p>Science labs, experiments, and STEM enrichment.</p></article>
+            <article class="card"><h3>Arts Department</h3><p>Music, drama, visual art, and creativity programs.</p></article>
+            <article class="card"><h3>Languages Department</h3><p>Strong literacy and communication across subjects.</p></article>
+            <article class="card"><h3>Humanities Department</h3><p>Social studies, civic education, and leadership.</p></article>
+          </div>
+
+          </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">SevenForks Comprehensive School</div>
+          <div class="footer-motto">Better Your Best To Excellence</div>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="admissions.html">Admissions</a>
+          <a href="news.html">News</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social" aria-label="Social links">
+          <a class="social" href="#" aria-label="Facebook">f</a>
+          <a class="social" href="#" aria-label="X">x</a>
+          <a class="social" href="#" aria-label="Instagram">ig</a>
+        </div>
+        <div class="footer-copy">© <span id="year"></span> SevenForks. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <div class="popup" data-popup hidden>
+      <div class="popup-card" role="dialog" aria-modal="true" aria-label="Announcement">
+        <button class="popup-close" type="button" data-popup-close aria-label="Close announcement">×</button>
+        <h3>Announcement</h3>
+        <p>STEM Showcase is coming up soon. Students should submit projects by next week.</p>
+        <a class="btn btn-primary" href="news.html">See News</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
